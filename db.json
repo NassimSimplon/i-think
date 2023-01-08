@@ -1,0 +1,10 @@
+{
+    "ItGroupes":[{
+        "id":1,
+        "name":"group1",
+        "image":"",
+        "category":"web development",
+        "members":[],
+        "posts":[]
+    }]
+}

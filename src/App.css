@@ -1,0 +1,682 @@
+ /*== Global Css ==*/
+ :root {
+   --primary-color: #D80027;
+   --primary-white: #FFFFFF;
+   --primary-black: #111111;
+   --secondary-white: whitesmoke;
+   --span-color: #00000099;
+   --before-bg-color: #d800282c;
+   --logo-Before: var(--primary-black)9a;
+   --boxShadow: rgba(0, 0, 0, 0.152);
+   --text-Shadow: rgba(0, 0, 0, 0.402);
+   --hoverColor: rgba(51, 51, 51, 0.257);
+ }
+
+ *,
+ *::after,
+ *::before {
+   box-sizing: border-box;
+   outline: none;
+   font-family: sans-serif;
+ }
+
+ body,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+   margin: 0;
+   font-weight: normal;
+   padding: 0;
+ }
+
+ ul {
+   list-style: none;
+ }
+
+ a {
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ button {
+   cursor: pointer;
+   padding: 8px 16px !important;
+   font-weight: 900;
+   font-size: 12px;
+   border-radius: 28px;
+   box-shadow: 0px 3px 5px var(--text-Shadow);
+
+ }
+
+ img {
+   display: block;
+   max-width: 100%;
+   cursor: pointer;
+ }
+
+ .App {
+   padding-top: 3.8rem;
+ }
+
+ marquee {
+   margin: 0;
+ }
+
+ marquee p {
+   padding: 5px !important;
+   margin: 0;
+   margin-top: 3px;
+   color: var(--primary-white);
+   font-size: 14px;
+   font-weight: 900;
+ }
+
+ #Home {
+   background-color: var(--primary-color);
+ }
+
+ .logo {
+   /*===== Navbar Start=====*/
+   width: fit-content;
+   height: fit-content;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 5px;
+ }
+
+ .logo h1 {
+   width: fit-content;
+   padding: 5px 10px;
+   background-color: var(--primary-color);
+   box-shadow: 2px 3px 5px var(--text-Shadow);
+   border-radius: 4px;
+   color: var(--primary-white);
+   font-weight: 900;
+   font-size: 27px;
+   margin: auto;
+ }
+
+ .logo span {
+   font-weight: 900;
+   color: var(--primary-color);
+   text-shadow: 2px 3px 5px var(--text-Shadow);
+   font-size: 25px;
+
+ }
+
+ .NavBar,
+ .NavBar div:nth-child(2) {
+   height: fit-content;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 15px;
+ }
+
+ .NavBar {
+   width: 100%;
+   height: 3.8rem !important;
+   z-index: 9999;
+   padding: 0.7rem 2rem;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: var(--primary-white);
+   border-bottom: solid 1px #7575753d;
+ }
+
+ .NavBar div button {
+   background-color: var(--primary-color);
+   border: var(--primary-color) 1px solid;
+   color: var(--primary-white);
+ }
+
+ .NavBar div h2 {
+   font-weight: 900;
+   font-size: 14px;
+   color: var(--primary-color);
+   text-shadow: 0px 3px 6px var(--text-Shadow);
+
+ }
+
+ /*===== Navbar end ====*/
+ /*
+*
+*
+*/
+
+ /*== Media Start ==*/
+ .Media {
+   position: fixed;
+   top: 60vh;
+   right: 0;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   z-index: 99999;
+ }
+
+ .Media div {
+   margin-top: 3px;
+   padding: 7px 8px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+ }
+
+ .Media div,
+ .Media div svg {
+   fill: var(--primary-white) !important;
+   background-color: var(--bg);
+ }
+
+ .Media div:nth-child(1) {
+   --bg: rgb(0, 0, 195);
+ }
+
+ .Media div:nth-child(2) {
+   --bg: green;
+ }
+
+ .Media div:nth-child(3) {
+   --bg: var(--primary-color);
+ }
+
+ .Media div:nth-child(4) {
+   --bg: #0A66C2;
+ }
+
+ /*===== Media end ====*/
+ /*
+*
+*
+*/
+ /*===== Description Start ====*/
+ .Description {
+   width: 100%;
+   height: 100%;
+   background-image: url(https://images.pexels.com/photos/247791/pexels-photo-247791.png?auto=compress&cs=tinysrgb&w=2400);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+   z-index: 1;
+   color: var(--primary-white);
+ }
+
+ .Description::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.729);
+   z-index: -1;
+ }
+
+ .Description>div {
+   width: 100%;
+   height: 100%;
+ }
+
+ .Description>div .slogan {
+   width: 100%;
+   font-size: 4.7vw;
+   font-weight: 900;
+   align-items: center;
+
+ }
+
+ .Description>div .slogan>.first_letter {
+   color: var(--primary-color);
+   width: fit-content;
+ }
+
+ .Description>div>section {
+   width: 100%;
+   height: fit-content;
+ }
+
+ .Description>div>section button {
+   border: var(--primary-color) 1px solid;
+   color: var(--primary-white);
+   background-color: transparent;
+   margin-top: 20px;
+ }
+
+ /*===== Description end ====*/
+ /*
+*
+*
+*/
+ /*===== Space Start =====*/
+ #Space {
+   width: 100%;
+   height: 500vh;
+   background-color: rgba(195, 195, 195, 0.196) !important;
+ }
+
+ #Space .filterHead {
+   width: 100%;
+   height: 3rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2rem 1.3rem;
+   position: sticky;
+   top: 3.8rem;
+   left: 0;
+   z-index: 9;
+   box-shadow: 0px 0px 5px 1px var(--boxShadow);
+   background-color: var(--primary-white);
+
+
+ }
+
+ #Space .filterHead h1 {
+   width: fit-content;
+   color: var(--span-color);
+   padding: 5px;
+   font-size: 20px;
+   border-radius: 4px;
+ }
+
+ #Space .filterHead div {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+
+ }
+
+ #Space .filterHead div span {
+   color: var(--span-color);
+   font-size: 14px;
+ }
+
+ #Space .filterHead div span:hover,
+ #Space .filterHead h1:hover {
+   color: var(--primary-black);
+ }
+
+ #Space .content {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 25% 50% 25%;
+   background-color: var(--secondary-white) !important;
+
+ }
+
+ #Space .content .markets {
+   width: 100%;
+   height: 100%;
+   box-shadow: 1px 0px 2px 2px rgba(0, 0, 0, 0.132);
+   padding: 1.5rem 1.3rem;
+
+ }
+
+ #Space .content .markets>div {
+   width: 100%;
+   position: sticky;
+   top: 9.3rem;
+   left: 0;
+ }
+
+ #Space .content .markets>div>div {
+   width: 100%;
+   background-color: var(--primary-white);
+   padding: 1rem 1.3rem;
+   border-radius: 8px;
+   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.157);
+ }
+
+ #Space .content .markets>div h6 {
+   text-align: center;
+   padding: 1rem;
+ }
+
+ #Space .content .markets>div h6 span {
+   color: var(--primary-color);
+ }
+
+ #Space .content .markets>div div .head {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 10px;
+ }
+
+ #Space .content .markets>div div .head h3 {
+   font-size: 18px;
+ }
+
+ #Space .content .markets>div div .head svg {
+   fill: var(--primary-color) !important;
+ }
+
+ #Space .content .markets>div div .place {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   margin-top: 15px;
+ }
+
+ #Space .content .markets>div div .place img {
+   width: 60px;
+   aspect-ratio: 1 / 1;
+   height: 60px;
+   object-fit: cover;
+   border-radius: 50%;
+ }
+
+ #Space .content .markets>div div .place div {
+   width: 100%;
+   height: 100%;
+ }
+
+ #Space .content .markets>div div .place div h4 {
+   font-size: 14px;
+   font-weight: 900;
+ }
+
+ #Space .content .markets>div div .place div span {
+   font-size: 12px;
+   color: var(--span-color);
+ }
+
+ #Space .content .markets>div div .place div button {
+   font-size: 12px;
+   margin-top: 5px;
+   color: var(--primary-white);
+   border: var(--primary-color) solid 1px;
+   background-color: var(--primary-color);
+ }
+
+ #Space .content .publication {
+   width: 100%;
+   height: fit-content;
+   padding: 1.5rem 1rem;
+ }
+
+ #Space .content .publication .card {
+   background-color: #ffffff;
+   padding: 1rem;
+   border-radius: 8px;
+ }
+
+ #Space .content .publication .card .head {
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+ }
+
+ #Space .content .publication .card .head img {
+   width: 35px;
+   aspect-ratio: 1 / 1;
+   height: 35px;
+   object-fit: cover;
+   border-radius: 50%;
+ }
+
+ #Space .content .publication .card .head div {
+   width: 100%;
+ }
+
+ #Space .content .publication .card .head div h2 {
+   font-size: 14px;
+   font-weight: 900;
+ }
+
+ #Space .content .publication .card .head div h5 {
+   font-size: 10px;
+   color: var(--span-color);
+   padding-top: 1px;
+ }
+
+ #Space .content .publication .card .description {
+   width: 100%;
+   height: fit-content;
+   padding: 1rem .5rem;
+   font-size: 14px;
+
+ }
+
+ #Space .content .publication .card .img_section {
+   width: 100%;
+   position: relative;
+   border-radius: 8px;
+ }
+
+ #Space .content .publication .card .img_section img {
+   border-radius: 8px;
+   width: 100%;
+   aspect-ratio: 1 / 1;
+   height: 380px;
+   object-fit: cover;
+ }
+
+ #Space .content .publication .card .img_section span {
+
+   background-color: var(--primary-color);
+   padding: 7px;
+   color: #fff;
+   border-radius: 4px;
+   font-size: 14px;
+   font-weight: 900;
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+
+ }
+
+ #Space .content .publication .card .footer {
+   width: 100%;
+   height: fit-content;
+   padding: 1rem .5rem;
+   padding-bottom: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ #Space .content .publication .card .footer span {
+
+   font-size: 14px;
+   color: var(--span-color);
+ }
+
+ #Space .content .publication .card .footer button {
+   width: fit-content;
+   height: fit-content;
+   border-radius: 28px;
+   background-color: var(--primary-color);
+   border: var(--primary-color) solid 1px;
+   color: var(--primary-white);
+   cursor: pointer;
+ }
+
+ #Space .content .publication .card .footer button:hover {
+   background-color: var(--primary-color);
+   color: var(--primary-white);
+ }
+
+ #Space .content .about {
+   width: 100%;
+   height: fit-content;
+   padding: 1.6rem 1rem;
+ }
+
+ #Space .content .about .about_card {
+   background-color: var(--primary-white);
+   padding: 1rem;
+   border-radius: 8px;
+   display: flow-root;
+ }
+
+ #Space .content .about .about_card .head {
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 14px;
+ }
+
+ #Space .content .about .about_card .head h3 {
+   font-size: 14px;
+   font-weight: 900;
+ }
+
+ #Space .content .about .about_card .head svg {
+   fill: var(--primary-color) !important;
+ }
+
+ #Space .content .about .about_card .colors,
+ #Space .content .about .about_card .sizes {
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 10px;
+
+ }
+
+ #Space .content .about .about_card .colors h5,
+ #Space .content .about .about_card .sizes h5 {
+   color: var(--span-color);
+ }
+
+ #Space .content .about .about_card .colors div,
+ #Space .content .about .about_card .sizes div {
+   width: fit-content;
+   height: fit-content;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 3px;
+ }
+
+ #Space .content .about .about_card .colors div span,
+ #Space .content .about .about_card .sizes div span {
+   width: 15px;
+   height: 15px;
+   background-color: var(--Space-color);
+   border-radius: 50%;
+   font-size: 14px;
+   color: var(--primary-color);
+ }
+
+ #Space .content .about .about_card .colors div span:nth-child(1) {
+   --Space-color: rgb(195, 0, 0);
+ }
+
+ #Space .content .about .about_card .colors div span:nth-child(2) {
+   --Space-color: black;
+ }
+
+ #Space .content .about .about_card .colors div span:nth-child(3) {
+   --Space-color: orange;
+ }
+
+ #Space .content .about .about_card .btn_section {
+   width: 100%;
+   height: fit-content;
+   padding-block: 1rem;
+ }
+
+ #Space .content .about .about_card .btn_section button {
+   width: fit-content;
+   height: fit-content;
+   padding: 5px 20px;
+   background-color: var(--primary-color);
+   color: var(--primary-white);
+   border-radius: 28px;
+   float: right;
+   font-size: 12px;
+
+ }
+
+ /*===== Space End =====*/
+ /*
+*
+*
+/
+ /*===== Media Query ====*/
+ @media (769px <=width) {
+   .Description {
+     padding: 17vh 7vw;
+   }
+
+   .Description>div .slogan {
+     font-size: 3.5vw;
+     width: 59%;
+   }
+
+   .Description>div .slogan>.first_letter {
+     font-size: 4.1vw;
+   }
+ }
+
+ @media (320px <=width <=480px) {
+   .Description {
+     padding: 8vh 7vw;
+   }
+
+   .Description>div .slogan {
+     font-size: 7.9vw;
+     text-align: center;
+   }
+
+   .Description>div .slogan>.first_letter {
+     font-size: 9vw;
+   }
+
+   .Description>div>section {
+     margin-inline: auto !important;
+     text-align: center;
+   }
+ }
+
+
+ @media (481px <=width <=768px) {
+   .Description {
+     padding: 8vh 5vw;
+   }
+
+   .Description>div .slogan {
+     font-size: 30px;
+     text-align: center;
+   }
+
+   .Description>div .slogan>.first_letter {
+     font-size: 32px;
+   }
+
+   .Description>div>section {
+     margin-inline: auto !important;
+     text-align: center;
+   }
+ }
