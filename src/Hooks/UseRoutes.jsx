@@ -1,5 +1,5 @@
-import {Suspense} from 'react'
-import {  Route } from 'react-router-dom'
+import { Suspense } from 'react'
+import { Route } from 'react-router-dom'
 import pagesLazyLoad from '../PagesLazyLoad'
 
 const Home = pagesLazyLoad('Pages', 'Home')
@@ -14,13 +14,13 @@ const LogIn = pagesLazyLoad('Components', 'LogIn')
 const RequireAuth = pagesLazyLoad('Components', 'RequireAuth')
 const More = pagesLazyLoad('Components', 'More')
 */}
-const useRoutes =(path,name)=>{
-    return (
-      <Route path={`${path}`} element={ <Suspense fallback={<div>...loading</div>}>
-      {name == 'Home' ?  <Home />  : name == 'NoMatch' ? <NoMatch />   : null}
-      </Suspense>} />
-    )
-  }
- 
-  
-  export default useRoutes
+const useRoutes = (path, name) => {
+  return (
+    <Route path={`${path}`} element={<Suspense fallback={<div>...loading</div>}>
+      {name == 'Home' ? <Home /> : name == 'NoMatch' ? <NoMatch /> : null}
+    </Suspense>} />
+  )
+}
+
+
+export default useRoutes

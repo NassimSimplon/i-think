@@ -1,10 +1,158 @@
 {
     "ItGroupes":[{
         "id":1,
-        "name":"group1",
-        "image":"",
-        "category":"web development",
-        "members":[],
+        "name":"React Developers",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+        "category":"Web development",
+        "members":[{
+            "id":1,
+            "fullName":"Jack" 
+        }],
+        "posts":[]
+    },{
+        "id":2,
+        "name":"Node For All",
+        "image":"https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1100",
+        "category":"Back-End development",
+        "members":[{
+            "id":1,
+            "fullName":"Jack" 
+        }],
+        "posts":[]
+    },{
+        "id":3,
+        "name":"Java Developers",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+        "category":"Web development",
+        "members":[{
+            "id":1,
+            "fullName":"Jack" 
+        }],
+        "posts":[]
+    },{
+        "id":4,
+        "name":"NextJS Developers",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+        "category":"Web development",
+        "members":[{
+            "id":1,
+            "fullName":"Jack" 
+        }],
+        "posts":[]
+    },{
+        "id":5,
+        "name":"React Developers",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+        "category":"Web development",
+        "members":[{
+            "id":1,
+            "fullName":"Jack" 
+        }],
         "posts":[]
     }]
+    ,
+    "Posts":[{
+        "id":1,
+        "authorId":1,
+        "Description":"Now React Module  😍😎🥳🥶🔥",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+         "comments":[
+            {
+                "id":1,
+                "authorId":2,
+                "comment":" Very  Nice "
+            } 
+
+         ],
+         "date":"1 Janvier 2023"
+    },{
+        "id":2,
+        "authorId":2,
+        "Description":"Now React Module  😍😎🥳🥶🔥",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+         "comments":[
+            {
+                "id":1,
+                "authorId":2,
+                "comment":" Very  Nice "
+            } 
+
+         ],
+         "date":"1 Janvier 2023"
+    },{
+        "id":3,
+        "authorId":2,
+        "Description":"Now React Module  😍😎🥳🥶🔥",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+         "comments":[
+            {
+                "id":1,
+                "authorId":2,
+                "comment":" Very  Nice "
+            } 
+
+         ],
+         "date":"1 Janvier 2023"
+    },
+    {
+        "id":4,
+        "authorId":2,
+        "Description":"Now React Module  😍😎🥳🥶🔥",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+         "comments":[
+            {
+                "id":1,
+                "authorId":2,
+                "comment":" Very  Nice "
+            } 
+
+         ],
+         "date":"1 Janvier 2023"
+    }
+    ,
+    {
+        "id":5,
+        "authorId":2,
+        "Description":"Now React Module  😍😎🥳🥶🔥",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+         "comments":[
+            {
+                "id":1,
+                "authorId":2,
+                "comment":" Very  Nice "
+            } 
+
+         ],
+         "date":"1 Janvier 2023"
+    },
+    {
+        "id":6,
+        "authorId":2,
+        "Description":"Now React Module  😍😎🥳🥶🔥",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+         "comments":[
+            {
+                "id":1,
+                "authorId":2,
+                "comment":" Very  Nice "
+            } 
+
+         ],
+         "date":"1 Janvier 2023"
+    },
+    {
+        "id":7,
+        "authorId":2,
+        "Description":"Now React Module  😍😎🥳🥶🔥",
+        "image":"https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1400",
+         "comments":[
+            {
+                "id":1,
+                "authorId":2,
+                "comment":" Very  Nice "
+            } 
+
+         ],
+         "date":"1 Janvier 2023"
+    } ]
 }

@@ -76,9 +76,31 @@
  #Home {
    background-color: var(--primary-color);
  }
+ .loadMore {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 20px;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: var(--primary-color) solid 1px;
+  border-radius: 28px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0rem ;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;;
 
- .logo {
+}
+#loadSection{
+  width: 70%;
+  height: 5rem;
+ 
+  position: relative;
+}
    /*===== Navbar Start=====*/
+ .logo {
+
    width: fit-content;
    height: fit-content;
    display: flex;
@@ -222,12 +244,12 @@
    z-index: -1;
  }
 
- .Description>div {
+ .Description > div {
    width: 100%;
    height: 100%;
  }
 
- .Description>div .slogan {
+ .Description > div .slogan {
    width: 100%;
    font-size: 4.7vw;
    font-weight: 900;
@@ -235,17 +257,17 @@
 
  }
 
- .Description>div .slogan>.first_letter {
+ .Description > div .slogan>.first_letter {
    color: var(--primary-color);
    width: fit-content;
  }
 
- .Description>div>section {
+ .Description > div>section {
    width: 100%;
    height: fit-content;
  }
 
- .Description>div>section button {
+ .Description > div>section button {
    border: var(--primary-color) 1px solid;
    color: var(--primary-white);
    background-color: transparent;
@@ -260,7 +282,7 @@
  /*===== Space Start =====*/
  #Space {
    width: 100%;
-   height: 500vh;
+   height: 100%;
    background-color: rgba(195, 195, 195, 0.196) !important;
  }
 
@@ -309,16 +331,13 @@
    color: var(--primary-black);
  }
 
- #Space .content {
+ #Space .content  {
    width: 100%;
    height: 100%;
-   display: grid;
-   grid-template-columns: 25% 50% 25%;
    background-color: var(--secondary-white) !important;
-
  }
 
- #Space .content .markets {
+ #Space .content   .markets {
    width: 100%;
    height: 100%;
    box-shadow: 1px 0px 2px 2px rgba(0, 0, 0, 0.132);
@@ -326,14 +345,14 @@
 
  }
 
- #Space .content .markets>div {
+ #Space .content   .markets > div {
    width: 100%;
    position: sticky;
    top: 9.3rem;
    left: 0;
  }
 
- #Space .content .markets>div>div {
+ #Space .content   .markets > div>div {
    width: 100%;
    background-color: var(--primary-white);
    padding: 1rem 1.3rem;
@@ -341,16 +360,16 @@
    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.157);
  }
 
- #Space .content .markets>div h6 {
+ #Space .content   .markets > div h6 {
    text-align: center;
    padding: 1rem;
  }
 
- #Space .content .markets>div h6 span {
+ #Space .content   .markets > div h6 span {
    color: var(--primary-color);
  }
 
- #Space .content .markets>div div .head {
+ #Space .content   .markets > div div .head {
    width: 100%;
    display: flex;
    flex-direction: row;
@@ -359,15 +378,16 @@
    padding-bottom: 10px;
  }
 
- #Space .content .markets>div div .head h3 {
-   font-size: 18px;
+ #Space .content   .markets > div div .head h3 {
+   font-size: 15px;
+   font-weight: 900;
  }
 
- #Space .content .markets>div div .head svg {
+ #Space .content   .markets > div div .head svg {
    fill: var(--primary-color) !important;
  }
 
- #Space .content .markets>div div .place {
+ #Space .content   .markets > div div .place {
    width: 100%;
    display: flex;
    flex-direction: row;
@@ -377,7 +397,7 @@
    margin-top: 15px;
  }
 
- #Space .content .markets>div div .place img {
+ #Space .content   .markets > div div .place img {
    width: 60px;
    aspect-ratio: 1 / 1;
    height: 60px;
@@ -385,42 +405,45 @@
    border-radius: 50%;
  }
 
- #Space .content .markets>div div .place div {
+ #Space .content   .markets > div div .place div {
    width: 100%;
    height: 100%;
  }
 
- #Space .content .markets>div div .place div h4 {
-   font-size: 14px;
+ #Space .content   .markets > div div .place div h4 {
+   font-size: 1.1vw;
    font-weight: 900;
  }
 
- #Space .content .markets>div div .place div span {
+ #Space .content   .markets > div div .place div span {
    font-size: 12px;
    color: var(--span-color);
  }
 
- #Space .content .markets>div div .place div button {
+ #Space .content   .markets > div div .place div button {
    font-size: 12px;
    margin-top: 5px;
    color: var(--primary-white);
    border: var(--primary-color) solid 1px;
    background-color: var(--primary-color);
  }
+ #Space .content .All_Post .container_publication{
+  width: 100%;
+ }
 
- #Space .content .publication {
+ #Space .content .All_Post .container_publication .publication {
    width: 100%;
    height: fit-content;
    padding: 1.5rem 1rem;
  }
 
- #Space .content .publication .card {
+ #Space .content .All_Post .container_publication .publication .card {
    background-color: #ffffff;
    padding: 1rem;
    border-radius: 8px;
  }
 
- #Space .content .publication .card .head {
+ #Space .content .All_Post .container_publication .publication .card .head {
    width: 100%;
    height: fit-content;
    display: flex;
@@ -428,7 +451,7 @@
    gap: 8px;
  }
 
- #Space .content .publication .card .head img {
+ #Space .content .All_Post .container_publication .publication .card .head img {
    width: 35px;
    aspect-ratio: 1 / 1;
    height: 35px;
@@ -436,22 +459,22 @@
    border-radius: 50%;
  }
 
- #Space .content .publication .card .head div {
+ #Space .content .All_Post .container_publication .publication .card .head div {
    width: 100%;
  }
 
- #Space .content .publication .card .head div h2 {
+ #Space .content .All_Post .container_publication .publication .card .head div h2 {
    font-size: 14px;
    font-weight: 900;
  }
 
- #Space .content .publication .card .head div h5 {
+ #Space .content .All_Post .container_publication .publication .card .head div h5 {
    font-size: 10px;
    color: var(--span-color);
    padding-top: 1px;
  }
 
- #Space .content .publication .card .description {
+ #Space .content .All_Post .container_publication .publication .card .description {
    width: 100%;
    height: fit-content;
    padding: 1rem .5rem;
@@ -459,13 +482,13 @@
 
  }
 
- #Space .content .publication .card .img_section {
+ #Space .content .All_Post .container_publication .publication .card .img_section {
    width: 100%;
    position: relative;
    border-radius: 8px;
  }
 
- #Space .content .publication .card .img_section img {
+ #Space .content .All_Post .container_publication .publication .card .img_section img {
    border-radius: 8px;
    width: 100%;
    aspect-ratio: 1 / 1;
@@ -473,7 +496,7 @@
    object-fit: cover;
  }
 
- #Space .content .publication .card .img_section span {
+ #Space .content .All_Post .container_publication .publication .card .img_section span {
 
    background-color: var(--primary-color);
    padding: 7px;
@@ -487,7 +510,7 @@
 
  }
 
- #Space .content .publication .card .footer {
+ #Space .content .All_Post .container_publication .publication .card .footer {
    width: 100%;
    height: fit-content;
    padding: 1rem .5rem;
@@ -498,13 +521,13 @@
    align-items: center;
  }
 
- #Space .content .publication .card .footer span {
+ #Space .content .All_Post .container_publication .publication .card .footer span {
 
    font-size: 14px;
    color: var(--span-color);
  }
 
- #Space .content .publication .card .footer button {
+ #Space .content .All_Post .container_publication .publication .card .footer button {
    width: fit-content;
    height: fit-content;
    border-radius: 28px;
@@ -514,25 +537,25 @@
    cursor: pointer;
  }
 
- #Space .content .publication .card .footer button:hover {
+ #Space .content .All_Post .container_publication .publication .card .footer button:hover {
    background-color: var(--primary-color);
    color: var(--primary-white);
  }
 
- #Space .content .about {
+ #Space .content .All_Post .about {
    width: 100%;
    height: fit-content;
    padding: 1.6rem 1rem;
  }
 
- #Space .content .about .about_card {
+ #Space .content .All_Post .about .about_card {
    background-color: var(--primary-white);
    padding: 1rem;
    border-radius: 8px;
    display: flow-root;
  }
 
- #Space .content .about .about_card .head {
+ #Space .content .All_Post .about .about_card .head {
    width: 100%;
    height: fit-content;
    display: flex;
@@ -542,17 +565,17 @@
    font-size: 14px;
  }
 
- #Space .content .about .about_card .head h3 {
+ #Space .content .All_Post .about .about_card .head h3 {
    font-size: 14px;
    font-weight: 900;
  }
 
- #Space .content .about .about_card .head svg {
+ #Space .content .All_Post .about .about_card .head svg {
    fill: var(--primary-color) !important;
  }
 
- #Space .content .about .about_card .colors,
- #Space .content .about .about_card .sizes {
+ #Space .content .All_Post .about .about_card .colors,
+ #Space .content .All_Post .about .about_card .sizes {
    width: 100%;
    height: fit-content;
    display: flex;
@@ -563,56 +586,36 @@
 
  }
 
- #Space .content .about .about_card .colors h5,
- #Space .content .about .about_card .sizes h5 {
+ #Space .content .All_Post .about .about_card .colors h5,
+ #Space .content .All_Post .about .about_card .sizes h5 {
    color: var(--span-color);
  }
 
- #Space .content .about .about_card .colors div,
- #Space .content .about .about_card .sizes div {
-   width: fit-content;
-   height: fit-content;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   align-items: center;
-   gap: 3px;
- }
-
- #Space .content .about .about_card .colors div span,
- #Space .content .about .about_card .sizes div span {
-   width: 15px;
-   height: 15px;
-   background-color: var(--Space-color);
+ 
+ #Space .content .All_Post .about .about_card .colors   span,
+ #Space .content .All_Post .about .about_card .sizes   span {
+   width:fit-content;
+   height: 13px;
    border-radius: 50%;
-   font-size: 14px;
-   color: var(--primary-color);
+   font-size: 11px;
+   color: var(--primary-black);
+   font-weight: 900;
  }
-
- #Space .content .about .about_card .colors div span:nth-child(1) {
-   --Space-color: rgb(195, 0, 0);
- }
-
- #Space .content .about .about_card .colors div span:nth-child(2) {
-   --Space-color: black;
- }
-
- #Space .content .about .about_card .colors div span:nth-child(3) {
-   --Space-color: orange;
- }
-
- #Space .content .about .about_card .btn_section {
+ 
+ #Space .content .All_Post .about .about_card .btn_section {
    width: 100%;
    height: fit-content;
    padding-block: 1rem;
+   z-index: 1;
  }
 
- #Space .content .about .about_card .btn_section button {
+ #Space .content .All_Post .about .about_card .btn_section button   {
    width: fit-content;
    height: fit-content;
    padding: 5px 20px;
    background-color: var(--primary-color);
    color: var(--primary-white);
+   border: var(--primary-color) solid 1px;
    border-radius: 28px;
    float: right;
    font-size: 12px;
@@ -630,31 +633,62 @@
      padding: 17vh 7vw;
    }
 
-   .Description>div .slogan {
+   .Description > div .slogan {
      font-size: 3.5vw;
      width: 59%;
    }
 
-   .Description>div .slogan>.first_letter {
+   .Description > div .slogan > .first_letter {
      font-size: 4.1vw;
+   }
+
+   #Space .content     {
+     display: grid;
+     grid-template-columns: 25% 75%;
+   }
+   #Space .content .All_Post .container_publication{
+ 
+    display: grid;
+    grid-template-columns: 70% 30% ;
+    gap: 0;
    }
  }
 
- @media (320px <=width <=480px) {
+ @media (width <=1024px) {
+   #Space .content   {
+     display: grid;
+     grid-template-columns: 1fr;
+   }
+   #Space .content .All_Post .container_publication{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr ;
+    gap: 0;
+   }
+   #Space .content   .markets {
+     display: none;
+   }
+
+   #Space .content .All_Post .about {
+     display: none;
+   }
+ }
+
+ @media (320px <= width <=480px) {
    .Description {
      padding: 8vh 7vw;
    }
 
-   .Description>div .slogan {
+   .Description > div .slogan {
      font-size: 7.9vw;
      text-align: center;
    }
 
-   .Description>div .slogan>.first_letter {
+   .Description > div .slogan >.first_letter {
      font-size: 9vw;
    }
 
-   .Description>div>section {
+   .Description > div>section {
      margin-inline: auto !important;
      text-align: center;
    }
@@ -666,16 +700,16 @@
      padding: 8vh 5vw;
    }
 
-   .Description>div .slogan {
+   .Description > div .slogan {
      font-size: 30px;
      text-align: center;
    }
 
-   .Description>div .slogan>.first_letter {
+   .Description > div .slogan>.first_letter {
      font-size: 32px;
    }
 
-   .Description>div>section {
+   .Description > div>section {
      margin-inline: auto !important;
      text-align: center;
    }
